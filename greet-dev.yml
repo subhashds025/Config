@@ -8,3 +8,9 @@ resilience4j:
         wait-duration-in-open-state: 60s
         permitted-number-of-calls-in-half-open-state: 3
         automatic-transition-from-open-to-half-open-enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
